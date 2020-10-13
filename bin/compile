@@ -189,6 +189,8 @@ main() {
   info "Unpacking cached files..."
   tar xjf "${CACHED_TAR}" -C "${BUILD_TARGET_DIR}" | indent
 
+  rm -rf "$CACHED_TAR"
+
   configure_buildpack_env_vars
 
   info "Install of FreeTDS ${FREETDS_VERSION} complete"
