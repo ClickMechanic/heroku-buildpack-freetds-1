@@ -126,7 +126,7 @@ download_and_extract_freetds_archive() {
 }
 
 checkout_freetds_src() {
-  git clone -b $FREETDS_BRANCH https://github.com/FreeTDS/freetds.git "${BUILD_DIR}"
+  git clone -b $FREETDS_BRANCH https://github.com/FreeTDS/freetds.git "${BUILD_DIR}/${FREETDS_ARCHIVE_NAME}"
 }
 
 build_and_install_freetds() {
