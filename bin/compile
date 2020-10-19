@@ -143,7 +143,7 @@ build_and_install_freetds() {
     # adding --disable-odbc making linking easier and we don't need it
     # adding --disable-debug to speed up compile
     cat <<EOF > ".build_options"
-    ./configure \
+    ./autogen.sh \
       "--prefix=${APP_TARGET_DIR}" \
       --disable-odbc \
       --disable-debug \
